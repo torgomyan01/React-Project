@@ -1,0 +1,77 @@
+.Navbar{
+    width: calc(100% - 160px);
+    height: 150px;
+    margin: 0 auto;
+    /* border-bottom: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    width: 120px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.menu{
+    width: auto;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-text{
+    color: #fff;
+    margin: 0 15px;
+}
+a:hover{
+    color: rgb(223, 219, 219)
+}
+.accaunt-block{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acc-href{
+    color: #fff;
+}
+.acc-href::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    background: url(../../img/navbar/cart.png) no-repeat center center;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 1024px){
+    .text {
+        font-size: 55px !important;
+        text-align: center !important;
+        line-height: 60px !important;
+    }
+    .scrollDown {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 100px !important;
+    }
+}
+@media (max-width: 768px){
+    .menu {
+        display: none !important;
+    }
+}
+@media (max-width: 425px){
+    .Navbar {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

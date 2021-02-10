@@ -1,0 +1,66 @@
+.header{
+    width: 100%;
+    height: 1650px;
+}
+.headerBgOne{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.headerBgTwo{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 500px;
+    z-index: 0;
+    left: 0;
+    transition: unset;
+}
+.HeaderImgTree{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 945px;
+    z-index: 0;
+    left: 0;
+    transition: unset;
+}
+.HeaderImgHero{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 1130px){
+    .headerBgTwo {
+        top: 200px;
+    }
+    .HeaderImgTree {
+        top: 490px;
+    }
+    .header {
+        height: 1075px;
+    }
+}
+@media (max-width: 795px){
+    .headerBgOne{
+        width: auto;
+    }
+    .headerBgTwo{
+        width: auto;
+    }
+    .HeaderImgTree{
+        width: auto;
+    }
+    .HeaderImgHero{
+        width: auto;
+    }
+    .header {
+        overflow: hidden;
+    }
+}
